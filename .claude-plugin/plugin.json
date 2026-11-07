@@ -1,0 +1,24 @@
+{
+  "name": "dialyne",
+  "displayName": "Dialyne",
+  "version": "1.0.0",
+  "description": "Give your AI agent a real phone line in France: it calls French numbers (+33), handles phone menus and hold, says it is an AI, and returns a written result.",
+  "author": {
+    "name": "Dialyne",
+    "email": "support@dialyne.com",
+    "url": "https://dialyne.com"
+  },
+  "homepage": "https://dialyne.com",
+  "repository": "https://github.com/dialyne/dialyne-mcp",
+  "license": "MIT",
+  "keywords": [
+    "phone",
+    "phone-call",
+    "telephony",
+    "voice-agent",
+    "france",
+    "mcp",
+    "ai-agent",
+    "calls"
+  ]
+}

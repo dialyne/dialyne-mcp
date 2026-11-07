@@ -1,0 +1,20 @@
+{
+  "name": "dialyne-mcp-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Call a French phone number from TypeScript with the Dialyne MCP server",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx mcp-client.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "dialyne",
+  "version": "1.0.0",
+  "description": "Give your AI agent a real phone line in France: it calls French numbers (+33), handles phone menus and hold, introduces itself as your virtual assistant (an AI), and returns a written result.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dialyne",
+    "shortDescription": "Real phone calls in France",
+    "longDescription": "Dialyne gives your assistant a phone line in France. Describe what you need (book a table, move an appointment, ask a shop a question) and Dialyne's voice agent calls the French number for you. By default it introduces itself as your virtual assistant and says it is an AI if asked (you can change how it introduces itself; it never denies being an AI), navigates phone menus, waits on hold, talks to the person who answers, and returns a written result with a summary. You can answer its questions during the call, take the call yourself, or cancel it. Calls only to French numbers, whenever you ask; automatic retries stay within 08:00-21:00 for the person called. No marketing or mass calling. No audio is recorded.",
+    "developerName": "Dialyne",
+    "category": "Productivity",
+    "capabilities": [
+      "Place phone calls",
+      "Follow calls",
+      "Answer the voice agent",
+      "Hand the call to you",
+      "Call history",
+      "Set how the agent introduces itself"
+    ],
+    "websiteURL": "https://dialyne.com",
+    "privacyPolicyURL": "https://dialyne.com/privacy",
+    "termsOfServiceURL": "https://dialyne.com/terms",
+    "defaultPrompt": [
+      "Call 05 34 00 11 22 and book a table for 4 on Friday at 8 pm for Martin.",
+      "Call my garage at 05 61 23 45 67 and move tomorrow's service to next week.",
+      "What happened on my last call?"
+    ]
+  }
+}
