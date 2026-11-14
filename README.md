@@ -32,10 +32,24 @@ The server uses OAuth 2.1 (dynamic client registration, PKCE). Paste the URL; yo
 | Codex / ChatGPT plugins | `plugin.json` + `mcp.json` at the root (Agent Plugins format) and `.codex-plugin/plugin.json` |
 | Gemini CLI | `gemini extensions install https://github.com/dialyne/dialyne-mcp` (`gemini-extension.json`) |
 | OpenAI Responses API | `{"type": "mcp", "server_label": "dialyne", "server_url": "https://mcp.dialyne.com/mcp", "headers": {"Authorization": "Bearer <key>"}, "require_approval": "always"}` |
-| Hermes, OpenClaw | Skill in [`skills/dialyne-phone-call/`](skills/dialyne-phone-call/SKILL.md) + API key in `DIALYNE_API_KEY` |
+| Hermes, OpenClaw | Remote MCP with an API key ([Hermes](https://dialyne.com/learn/hermes-agent-phone-calls/), [OpenClaw](https://dialyne.com/learn/openclaw-phone-calls/): set `transport: streamable-http`), or the skill in [`skills/dialyne-phone-call/`](skills/dialyne-phone-call/SKILL.md) + API key in `DIALYNE_API_KEY` |
 | n8n | [`examples/n8n/`](examples/n8n/) (HTTP Request nodes), or the MCP Client tool with the URL above |
 
 Step-by-step instructions an agent can follow on its own: [`llms-install.md`](llms-install.md).
+
+## Guides
+
+- **How to give your AI agent a phone (MCP):** https://dialyne.com/learn/give-your-ai-agent-a-phone/ · 🇫🇷 https://dialyne.com/guides/donner-un-telephone-a-son-agent-ia/
+- **Per agent:** [ChatGPT](https://dialyne.com/learn/chatgpt-phone-calls/) · [Claude](https://dialyne.com/learn/claude-phone-calls/) · [Hermes Agent](https://dialyne.com/learn/hermes-agent-phone-calls/) · [OpenClaw](https://dialyne.com/learn/openclaw-phone-calls/) · [n8n](https://dialyne.com/learn/n8n-phone-calls/)
+- **FAQ:** https://dialyne.com/learn/faq/ · 🇫🇷 https://dialyne.com/faq/
+
+## Dialyne vs Vapi / Bland / Retell
+
+Short version (competitor facts from their official pricing pages, read on 2026-11-14; details and sources in each comparison):
+
+- **Vapi, Retell AI** are platforms to *build* your own voice agents (pick models and voices, inbound and outbound, high volume, US numbers, SOC 2/HIPAA options). Choose them if you need that control or US/international calling. → [Dialyne vs Vapi](https://dialyne.com/compare/dialyne-vs-vapi/) · [Dialyne vs Retell AI](https://dialyne.com/compare/dialyne-vs-retell-ai/)
+- **Bland AI** also gives AI agents a phone over MCP, with a flat agent phone plan for the **US and Canada** (own number, SMS, inbound). Choose it for North America. → [Dialyne vs Bland AI](https://dialyne.com/compare/dialyne-vs-bland-ai/)
+- **Dialyne** is turnkey and **France-only** (outbound calls to French numbers): your agent describes the task, Dialyne runs the call and returns a written result. All-in price in euros (0.20 €/min on Starter, no subscription), no voice-agent builder, no SOC 2/HIPAA, no inbound number. Not for prospecting, surveys or mass calling.
 
 ## Tools
 
